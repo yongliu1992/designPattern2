@@ -99,25 +99,8 @@ class OperationAdapter implements ScoreOperation
     }
 }
 
-//为了让系统具备良好的灵活性和可扩展性，我们引入了工具类XMLUtil和配置文件，其中，XMLUtil类的代码如下所示：
-
-class XMLUtil
-{
-//该方法用于从XML配置文件中提取具体类类名，并返回一个实例对象
-    public static function getBean()
-    {
-
-            //创建文档对象
-//sim xml类
-            $Class=new Client();
-            $c = $Class->forName($cName);
-            $obj = $c->newInstance();
-            return $obj;
-
-        if(!$obj)return null;
-
-	}
-}
+//为了让系统具备良好的灵活性和可扩展性，我们引入了xml
+//simplexml_load_file();
 ?>
 //编写如下客户端测试代码：
 <!--class Client {]
