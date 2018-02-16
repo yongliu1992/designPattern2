@@ -44,7 +44,7 @@ $a = new temp2();
 $a->test();
 
 echo '<br/>';
-//利用委托+接口约束 来完成类似效果
+//策略模式 利用委托+接口约束 ，对象组合  让类的调用的方法更有弹性
 interface  temp3
 {
     function doTemp();
