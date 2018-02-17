@@ -16,6 +16,42 @@
        Sunny公司开发人员最初使用简单工厂模式对日志记录器进行了设计，初始结构如图1所示：
  */
 
+interface  Talk
+{
+    function say();
+}
+
+class Talker implements Talk
+{
+    function say()
+    {
+        echo __METHOD__;
+    }
+}
+
+class Dog implements Talk
+{
+    function say()
+    {
+        echo __METHOD__;
+    }
+}
+
+class talkFactory
+{
+    function createTalk(Talk $talk)
+    {
+        $t = new $talk;
+        return $t;
+    }
+}
+$c = new talkFactory();
+$c->createTalk(new Talker())->say();
+echo '<br/>';
+$c->createTalk(new Dog())->say();
+exit;
+
+
 interface Logger
 {
     //log里面还可以定一些相关需要的需求
