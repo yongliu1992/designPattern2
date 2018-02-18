@@ -27,3 +27,19 @@ class Register
         unset(self::$objects[$alias]);
     }
 }
+
+class Register2
+{
+    protected static $obj;
+
+    static function set($alias,$object)
+    {
+        self::$obj[$alias] = $object;
+    }
+
+    static function get($alias)
+    {
+        unset(self::$obj[$alias]);
+    }
+}
+
