@@ -6,7 +6,7 @@
  * Time: 下午8:21
  */
 /*
- * hp已经帮我们准备好了两个接口，我们没有必要重造轮子，这两个接口分别是SplObserver和SplSubject，关于这两个接口的定义，可以查看以下官方文档：
+ * php已经帮我们准备好了两个接口，我们没有必要重造轮子，这两个接口分别是SplObserver和SplSubject，关于这两个接口的定义，可以查看以下官方文档：
 
 SplObserver：http://php.net/manual/zh/class.splobserver.php
 SplSubject：http://php.net/manual/zh/class.splsubject.php
