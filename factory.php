@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: kok
- * Date: 25/11/2017
- * Time: 10:37
- */
 class Test
 {
     static function createDB()
