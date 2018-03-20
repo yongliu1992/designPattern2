@@ -11,7 +11,7 @@ class Sing
     static protected $instance;
     private $number;
 
-   final protected function __construct()
+    final protected function __construct()
     {
         $this->number=mt_rand();
     }
@@ -24,6 +24,7 @@ class Sing
         }
         return self::$instance;
     }
+
     function getNumber()
     {
         echo $this->number.'<br/>';

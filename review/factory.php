@@ -29,3 +29,4 @@ class MyButtonFactory implements ButtonFactory{
 $button  = new MyButtonFactory();
 var_dump($button->createButton('Mac'));
 var_dump($button->createButton('Win'));
+//工厂模式与简单工厂模式区别 简单工厂模式 是定义一个创建对象的接口，子类自己决定实现哪个类，而工厂模式是取到对象，由服务端 选择执
